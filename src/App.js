@@ -24,7 +24,7 @@ function App() {
   const debouncedFetchQuote = debounce(fetchQuote, 500);
   useEffect(() => {
     debouncedFetchQuote();
-  }, []);
+  }, [debouncedFetchQuote]);
   const handleNewQuoteClick = () => {
     debouncedFetchQuote();
   };
